@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  font-family: "Arial";
+  font-size: 16px;
+  color: #262626;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-bottom: 0.5px solid #afafaf;
+}
+
+li:first-child {
+  border-left: 0.25em solid #0066cc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+img {
+  display: none;
+}
+
+h1,h2,h3,p {
+  margin: 0.2rem;
+}
+
+p {
+  color: #888;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+}
+.section2 .block:nth-child(2) {
+  margin-right: 3em;
+}
+
+.flex1 {flex: 1;}
+.flex2 {flex: 2;}
+
+.header {
+  background: #afafaf;
+  padding: 2em 1.5em;
+}
+.header p {
+  color: inherit;
+}
+
+.fa-angle-up, .fa-angle-down {
+  padding: 20px 25px;
+  border-radius: 500px;
+}
+.fa-angle-up:hover, .fa-angle-down:hover {
+  background: #9f9f9f;
+}
+
+.item {
+  padding: 2em 1.5em;
+  align-items: center;
+}
+
+.fa-calendar {
+  margin-right: 0.5rem;
+}
+
+.paragraph {
+  margin-bottom: 1em;
+}
+.para-closed {
+  max-height: 1.1rem;
+  overflow-y: hidden;
+}
+.para-closed::after {
+  background: white;
+}
+.para-open p {
+  color: black;
+}
+
+@media only screen and (min-width: 900px) {
+  img {
+    display: block;
+    border-radius: 100px;
+    border: 1px solid #afafaf;
+  }
+
+  .container {
+    margin: 10% 15%;
+    border: 1px solid #afafaf;
+  }
+
+  .section2 .block:first-child {
+    margin-right: 3em;
+  }
+
+  .header {
+    padding: 2em 3em;
+  }
+
+  .item {
+    padding: 2em 3em;
+  }
+
+  .fa-trash {
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    z-index: 1000;
+  }
+  .fa-trash:hover {
+    box-shadow: 0px 1.5px 5px #555;
+  }
+}

@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let item of items" onclick='togglePara(this)'>
+    <div class="section2 item">
+      <div class="section1 block">
+        <img src="{{item.img}}" alt="image" height='150'/>
+      </div>
+      <div class="section1 block">
+        <h2>{{item.title}}</h2>
+        <h3>{{item.subtitle}}</h3>
+        <div class='paragraph para-closed'><p>{{item.paragraph}}</p></div>
+        <p><i class="far fa-calendar"></i> {{item.date}}</p>
+      </div>
+      <div class="section1 block" onclick='trash()'>
+        <i class="fas fa-trash"></i>
+      </div>
+    </div>
+  </li>
+</ul>
